@@ -34,3 +34,20 @@ h2 {
         height: 30em;
     }
 }
+
+.section-slide {
+    height: auto;
+    background-image: none
+}
+
+.section-slide .slider .slides {
+    margin: 0;
+}
+
+.section-slide .slider .slides li img {
+    height: 100% !important;
+    width: 100% !important;
+    background-position: top;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+}
