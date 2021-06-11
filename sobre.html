@@ -116,8 +116,57 @@
             <a class="materialize-red waves-effect waves-light btn center ">More</a>
         </div>
     </section>
-
+    
+    <section class="row" style="margin-top: -3em">
+        <h3 class="center-align">CONTACTO</h3>
+        <article class="col s6 offset-s3">
+            <form method="POST">
+                <div class="input-field">
+                    <i class="material-icons prefix">perm_identity</i>
+                    <label>Nome</label>
+                    <input name="nome" type="text">
+                </div>
+                
+                <div class="input-field">
+                    <i class="material-icons prefix">person_pin</i>
+                    <label>Apelido</label>
+                    <input name="apelido" type="text">
+                </div>
+                
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <label>Email</label>
+                    <input name="email" type="email">
+                </div>
+                
+                <div class="input-field">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <label>Mensagem</label>
+                    <textarea class="materialize-textarea" id="" length="140" name="mensagem"
+                              rows="10"></textarea>
+                </div>
+                
+                <p class="center-align">
+                    <a class="waves-effect materialize-red btn modal-trigger" href="#modal1"><i
+                            class="material-icons right">send</i>ENVIAR</a>
+                
+                </p>
+            </form>
+        </article>
+    </section>
 </div>
+
+<!-- Modal Structure -->
+<div class="modal" id="modal1">
+    <div class="modal-content">
+        <h4><i class="material-icons">done_all</i> Mensagem enviada</h4>
+        <p>Recebemos sua mensagem, responderemos assim que possível!</p>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-close waves-effect waves-green btn-flat" href="#!">OK</a>
+    </div>
+</div>
+
 
 <footer class="page-footer blue-grey darken-3">
     <div class="container">
@@ -153,6 +202,10 @@
     document.addEventListener("DOMContentLoaded", function () {
         var elems = document.querySelectorAll(".sidenav");
         var instances = M.Sidenav.init(elems);
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
     });
 </script>
 </body>
